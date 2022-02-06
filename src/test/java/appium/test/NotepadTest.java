@@ -46,5 +46,13 @@ public class NotepadTest {
 	@Test
 	public void checkHelpAboutNowTest() {
 		driver.findElementByName("ヘルプ(H)").click();
+		driver.findElementByName("バージョン情報(A)").click();
+		driver.findElementByName("OK").click();
 	}
+
+	@Test
+	public void sendTextTest() {
+		driver.findElementByName("テキスト エディター").sendKeys("this is my notepad automation");
+	}
+
 }
